@@ -20,3 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('associados', function() {
+    //
+    return view ('associados.index');
+})->name('associados');
+
+Route::get('maquinas', function() {
+    //
+    return view ('maquinas.index');
+})->name('maquinas');
+
